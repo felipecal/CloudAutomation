@@ -52,6 +52,8 @@ $ cd frontend
 $ npm install
 
 # Rode o Back-End
+$ Preencha as enviroments no .env
+<br>
 $ cd backend
 <br>
 $ yarn dev
