@@ -38,7 +38,7 @@ Tabela de  conteúdos
 $ git clone https://github.com/felipecal/CloudAutomation.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$cd CloudAutomation
+$ cd CloudAutomation
 
 # Instale as dependências do Back-End
 $ cd backend
@@ -49,7 +49,7 @@ $ yarn
 # Instale as dependências do Front-End
 $ cd frontend
 <br>
-$npm install
+$ npm install
 
 # Rode o Back-End
 $ cd backend
@@ -60,7 +60,7 @@ $ yarn dev
 # Rode o Front-End
 $ cd frontend
 <br>
-$npm start
+$ npm start
 
 <br>
 
