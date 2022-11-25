@@ -11,10 +11,6 @@ Tabela de  conteúdos
    * [Sobre](#Sobre)
       * Um MVP em Web Service de uma automação de armazenamento de dados em cloud.
       
-   * [Instalação](#instalacao)
-      $git clone https://github.com/felipecal/CloudAutomation.git
-      $code CloudAutomation
-      
    * [Tecnologias](#tecnologias)
       * [Back-End](#back-end)
       	 * JavaScript (NodejS)
@@ -34,9 +30,6 @@ Tabela de  conteúdos
       	* Sequelize
         * React
         
-              
-        
-
 <!--te-->
 
 ### Features
@@ -45,16 +38,29 @@ Tabela de  conteúdos
 $ git clone https://github.com/felipecal/CloudAutomation.git
 
 # Acesse a pasta do projeto no terminal/cmd
-cd CloudAutomation
+$cd CloudAutomation
 
 # Instale as dependências do Back-End
 $ cd backend
+<br>
 $ yarn 
 
 
 # Instale as dependências do Front-End
-$ cd frontend 
-%npm install
+$ cd frontend
+<br>
+$npm install
+
+# Rode o Back-End
+$ cd backend
+<br>
+$ yarn dev
+
+
+# Rode o Front-End
+$ cd frontend
+<br>
+$npm start
 
 <br>
 
