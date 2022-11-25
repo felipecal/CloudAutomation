@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+    "target": "es2017",
+    "module": "CommonJS",
+    "lib": ["es6"],
+    "allowJs": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "types": ["node"],
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "typeRoots": ["node_modules/@types", "backend/src/@types"],
+    "baseUrl": ".",
+    "paths": {
+        "@config/*": ["backend/src/config/*"],
+        "@db/*": ["backend/src/db/*"],
+        "@graphql/*": ["graphql/modules/*"]
+    }}
+}
