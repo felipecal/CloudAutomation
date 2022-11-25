@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Button from "../../components/Button";
 import { v4 as uuidv4 } from "uuid";
+import Button from "@mui/material/Button";
+import {
+  Card,
+  Container,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+
+} from '@mui/material';
 
 export default function Upload() {
   const [images, setImages] = useState<string[]>([]);
@@ -49,13 +57,12 @@ export default function Upload() {
   }
 
   useEffect(() => {
-    if (images.length==0) loadImages();
-  },[]);
-
+    if (images.length == 0) loadImages();
+  }, []);
 
   return (
     <div className="App">
-      <h2>Google Storage API</h2>
+      <h2>Google Storage</h2>
       <input
         type="file"
         name="imgfile"
@@ -63,12 +70,22 @@ export default function Upload() {
         id="imgfile"
         onChange={GetFile}
       />
-      <Button onClick={UploadFile}>Enviar</Button>
-      <div className="" id="images">
+      <Button variant="contained" onClick={UploadFile}>
+        Enviar
+      </Button>
+      <Container>
+      <ImageList gap={12} sx={{mb: 8, gridTemplateColumns:'repeat(auto-fill, minmax(180px, 1fr))!important',}}>
         {images.map((image, index) => (
-          <img src={image} key={index} />
+          <Card key={index}>
+            <ImageListItem sx={{ height: '100% !important' }} key={index}>
+              <ImageListItemBar
+                sx={{background:'linear-gradient(to bottom, rgba(0,0,0,0.7)0%, rgba(0,0,0,0.3)70%, rgba(0,0,0,0)100%)',}} position="top"/>
+              <img src={image} key={index} loading="lazy" style={{ cursor: 'pointer' }}/>
+            </ImageListItem>
+          </Card>
         ))}
-      </div>
+      </ImageList>
+    </Container>
     </div>
   );
 }
