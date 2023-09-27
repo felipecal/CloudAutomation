@@ -1,70 +1,66 @@
 <h1 align="center">Cloud Automation</h1>
 
-
 <h2 align="center"> 
-	👾 Automação em cloud 👾
+    👾 Cloud Automation 👾
 </h2>
 
-Tabela de  conteúdos
+Table of Contents
 =================
 <!--ts-->
-   * [Sobre](#Sobre)
-      * Um MVP em Web Service de uma automação de armazenamento de dados em cloud.
+   * [About](#About)
+      * An MVP of a Web Service for cloud data storage automation.
       
-   * [Tecnologias](#tecnologias)
+   * [Technologies](#technologies)
       * [Back-End](#back-end)
-      	 * JavaScript (NodejS)
+         * JavaScript (Node.js)
          * TypeScript 
       * [Front-End](#front-end)
          * TypeScript
-      * [Front-End Marcação](#front-end)
+      * [Front-End Markup](#front-end)
          * CSS
-      	 * HMTL
-      * [Conteinerização](#conteinerização)
+         * HTML
+      * [Containerization](#containerization)
          * Docker
-      * [Framework e Bibliotecas](#framework)
-      	* Express
-      	* Apollo
-      	* Graphql
-      	* Pg
-      	* Sequelize
+      * [Frameworks and Libraries](#framework)
+        * Express
+        * Apollo
+        * GraphQL
+        * Pg
+        * Sequelize
         * React
         
 <!--te-->
 
 ### Features
 
-# Clone este repositório
+# Clone this repository
 $ git clone https://github.com/felipecal/CloudAutomation.git
 
-# Acesse a pasta do projeto no terminal/cmd
+# Access the project directory in the terminal/cmd
 $ cd CloudAutomation
 
-# Instale as dependências do Back-End
+# Install Back-End dependencies
 $ cd backend
 <br>
 $ yarn 
 
-
-# Instale as dependências do Front-End
+# Install Front-End dependencies
 $ cd frontend
 <br>
 $ npm install
 
-# Rode o Back-End
-$ Preencha as enviroments no .env
+# Run the Back-End
+$ Fill in the environment variables in .env
 <br>
 $ cd backend
 <br>
 $ yarn dev
 
-
-# Rode o Front-End
+# Run the Front-End
 $ cd frontend
 <br>
 $ npm start
 
 <br>
-
 
 <p align="right"><a href="#top">back to top</a></p>
